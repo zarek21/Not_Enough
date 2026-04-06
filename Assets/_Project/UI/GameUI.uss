@@ -1,0 +1,89 @@
+
+.root-container {
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+/* ============================================
+   Sección superior: Porcentaje + Barra
+   ============================================ */
+.top-section {
+    align-items: center;
+    width: 100%;
+}
+
+.health-text {
+    color: rgba(180, 180, 180, 0.85);
+    font-size: 32px;
+    -unity-font: url("project://database/Assets/_Project/Fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+    -unity-font-definition: initial;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin: 0;
+    padding: 0 0 6px 0;
+    letter-spacing: 2px;
+}
+
+/* Track (fondo gris oscuro de la barra) */
+.health-bar-track {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+}
+
+/* Fill (relleno blanco que se encoge) */
+.health-bar-fill {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 4px;
+}
+
+/* ============================================
+   Sección inferior: Score de orbes
+   ============================================ */
+.bottom-section {
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.score-text {
+    color: rgba(180, 180, 180, 0.85);
+    font-size: 48px;
+    -unity-font: url("project://database/Assets/_Project/Fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+    -unity-font-definition: initial;
+    -unity-font-style: bold;
+    -unity-text-align: middle-right;
+    margin: 0;
+    padding: 0 10px 10px 0;
+    letter-spacing: 1px;
+}
+
+/* ============================================
+   Pantalla de Victoria
+   ============================================ */
+.victory-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    display: none; /* Oculta por defecto */
+}
+
+.victory-text {
+    color: rgba(180, 180, 180, 0.85);
+    font-size: 80px;
+    -unity-font: url("project://database/Assets/_Project/Fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+    -unity-font-definition: initial;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 8px;
+    opacity: 0.9;
+}
